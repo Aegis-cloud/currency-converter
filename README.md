@@ -32,6 +32,7 @@ http://localhost:8080/api
 # Project Structure
 
 currency-converter/
+│
 ├── src/
 │   ├── main/
 │   │   ├── java/com/project/currency_converter/
@@ -48,8 +49,6 @@ currency-converter/
 ├── pom.xml
 ├── README.md
 └── .gitignore
-
-
 
 ---
 
