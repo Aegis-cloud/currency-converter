@@ -17,6 +17,11 @@ A simple Spring Boot application that provides currency conversion services by f
 
 ---
 
+## Base URL
+http://localhost:8080/api
+
+---
+
 ## Prerequisites
 - Java 11 or higher
 - Maven 3.6 or higher
