@@ -28,16 +28,32 @@ http://localhost:8080/api
 - Any IDE (I used Visual Studio Code)
 
 ---
-## Project Structure
-`
-currency-converter/ │ ├── src/ │ ├── main/ │ │ ├── java/com/project/currency_converter/ │ │ │ ├── CurrencyConverterApplication.java │ │ │ ├── CurrencyConverterService.java │ │ │ ├── ConversionRequest.java │ │ │ ├── ConversionResponse.java │ │ │ └── ExchangeRateResponse.java │ │ └── resources/ │ │ └── application.properties │ └── test/ │ └── java/com/project/currency_converter/ │ └── CurrencyConverterServiceTest.java ├── pom.xml ├── README.md └── .gitignore
-`
+# Project Structure
+
+currency-converter/
+├── src/
+│   ├── main/
+│   │   ├── java/com/project/currency_converter/
+│   │   │   ├── CurrencyConverterApplication.java
+│   │   │   ├── CurrencyConverterService.java
+│   │   │   ├── ConversionRequest.java
+│   │   │   ├── ConversionResponse.java
+│   │   │   └── ExchangeRateResponse.java
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+│       └── java/com/project/currency_converter/
+│           └── CurrencyConverterServiceTest.java
+├── pom.xml
+├── README.md
+└── .gitignore
+
 
 ## Setup Instructions
 
-1. Clone the repository:
+1. Repository:
    ```bash
-   git clone https://github.com/Aegis-cloud/currency-converter.git
+   https://github.com/Aegis-cloud/currency-converter.git
    cd currency-converter
    ```
 
