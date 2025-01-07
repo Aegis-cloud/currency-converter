@@ -13,7 +13,10 @@ public class CurrencyConverterController {
 
     @Autowired
     private CurrencyConverterService currencyConverterService;
-
+    @GetMapping("")
+    public String home() {
+        return "Currency Converter Application is running!";
+    }
     // GET /api/rates?base=USD
     @GetMapping("/rates")
     public Map<String, Double> getExchangeRates(@RequestParam(defaultValue = "USD") String base) {
