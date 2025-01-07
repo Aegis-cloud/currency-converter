@@ -17,13 +17,12 @@ public class CurrencyConverterController {
     public String home() {
         return "Currency Converter Application is running!";
     }
-    // GET /api/rates?base=USD
+    
     @GetMapping("/rates")
     public Map<String, Double> getExchangeRates(@RequestParam(defaultValue = "USD") String base) {
         return currencyConverterService.getRates(base);
     }
 
-    // POST /api/convert
     @PostMapping("/convert")
     public ConversionResponse convertCurrency(@RequestBody ConversionRequest request) {
         double conversionRate = currencyConverterService.getConversionRate(request.getFrom(), request.getTo());
