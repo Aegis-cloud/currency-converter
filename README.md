@@ -92,4 +92,13 @@ mvn test
          "amount": 100
      }
      ```
+   - Response (raw - JSON):
+     ```json
+     {
+         "from": "USD",
+         "to": "EUR",
+         "amount": 100.0,
+         "convertedAmount": 96.3
+     }
+     ```
 
