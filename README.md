@@ -28,9 +28,26 @@ http://localhost:8080/api
 - Any IDE (I used Visual Studio Code)
 
 ---
-# Currency Converter Project Structure
+## Project Structure
 
-currency-converter/ │ ├── src/ │ ├── main/ │ │ ├── java/com/project/currency_converter/ │ │ │ ├── CurrencyConverterApplication.java │ │ │ ├── CurrencyConverterService.java │ │ │ ├── ConversionRequest.java │ │ │ ├── ConversionResponse.java │ │ │ └── ExchangeRateResponse.java │ │ └── resources/ │ │ └── application.properties │ └── test/ │ └── java/com/project/currency_converter/ │ └── CurrencyConverterServiceTest.java ├── pom.xml ├── README.md └── .gitignore
+currency-converter/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/com/project/currency_converter/
+│   │   │   ├── CurrencyConverterApplication.java
+│   │   │   ├── CurrencyConverterService.java
+│   │   │   ├── ConversionRequest.java
+│   │   │   ├── ConversionResponse.java
+│   │   │   └── ExchangeRateResponse.java
+│   │   └── resources/
+│   │       └── application.properties
+│   └── test/
+│       └── java/com/project/currency_converter/
+│           └── CurrencyConverterServiceTest.java
+├── pom.xml
+├── README.md
+└── .gitignore
 
 ---
 ## Setup Instructions
