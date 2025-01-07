@@ -55,7 +55,6 @@ mvn test
 ## Dependencies
 - Spring Boot Starter Web
 - Spring Boot Starter Test
-- Maven Surefire Plugin
 
 ---
 
