@@ -1,0 +1,73 @@
+------------------------ API Documentation for Currency Converter ---------------------------
+
+Base URL:
+
+http://localhost:8080/api
+
+
+Endpoint 1: Convert Currency
+
+Description: Converts an amount from one currency to another.
+
+URL: /api/convert
+
+Method: POST
+
+Request Body (JSON):
+
+json
+{
+  "from": "USD",
+  "to": "EUR",
+  "amount": 100
+}
+Response (JSON):
+
+json
+{
+  "from": "USD",
+  "to": "EUR",
+  "amount": 100,
+  "convertedAmount": 94.5
+}
+
+Endpoint 2: Fetch Conversion Rate
+
+Description: Fetches the current exchange rates etween two currencies.
+
+URL: /api/rates?base={baseCurrency}
+
+Method: GET
+
+Path Parameter:
+
+baseCurrency: The base currency for exchange rates (default to USD).
+Example Response:
+{
+    "USD": 1,
+    "AED": 3.67,
+    "AFN": 70.2,
+    "ALL": 94.7,
+    "AMD": 396.29,
+    "ANG": 1.79,
+    "AOA": 921.42,
+    ......
+}
+
+Possible Errors:
+
+400 Bad Request: Missing required fields.
+500 Internal Server Error: External API is unavailable or an unexpected error occurred.
+500 Internal Server Error: Invalid Currency Code
+Example Error Response:
+json
+Copy code
+{
+  "message": "External API is unavailable"
+}
+Example Error Response:
+json
+Copy code
+{
+  "message": "Conversion Rate for USD to ABC not available."
+}
