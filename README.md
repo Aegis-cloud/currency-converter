@@ -28,10 +28,10 @@ http://localhost:8080/api
 - Any IDE (I used Visual Studio Code)
 
 ---
+
 # Project Structure
 
 currency-converter/
-│
 ├── src/
 │   ├── main/
 │   │   ├── java/com/project/currency_converter/
@@ -49,6 +49,7 @@ currency-converter/
 ├── README.md
 └── .gitignore
 
+---
 
 ## Setup Instructions
 
